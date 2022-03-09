@@ -1,17 +1,12 @@
 package br.com.ZTesting;
 
-public class MainZTesting extends Pergunta {
+public class MainZTesting extends Requisicao {
 	
 	public static void main(String[] args) {
 		
-		Pergunta p = new Pergunta();
+		Requisicao p = new Requisicao();
 		
-		p.escolhaMarcaProcessador();
-		
-		p.escolhaPlacaDeVideo();
-		
-		p.escolhaMemoriaRam();
-		
+		p.rodaOuNao();
 	}
 	
 }
