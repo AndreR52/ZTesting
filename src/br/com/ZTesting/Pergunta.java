@@ -127,8 +127,8 @@ public class Pergunta {
 		System.out.println("Digite a quantidade de memoria Ram do seu computador:");
 		setMemoriaRam(entrada.next());		
 		
-		while(!getMemoriaRam().matches("[1-65]+")) {
-			System.out.println("Valor digitado invalido.\nQuanto é sua memoria Ram?");
+		while(!getMemoriaRam().matches("[0-32]+")) {
+			System.out.println("Valor digitado invalido.\nDigite quanto de memoria Ram seu computador tem ?");
 			System.out.println("Digite quanto de RAM:");
 			setMemoriaRam(entrada.next());			
 		}
