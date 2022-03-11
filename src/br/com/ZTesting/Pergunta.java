@@ -13,16 +13,20 @@ public class Pergunta {
 	 private String memoriaRam;
 	 private int e;
 	 private int v;
-	 private int m;
-	 
+	 private int m = Integer.parseInt("0");
+	 private String regex = "^[A-Za-z]+$";
 	 	 
 	 void escolhaMarcaProcessador () {
-		 System.out.println("Qual a Marca do seu processador?\n1.Intel\n2.AMD");
+		 System.out.println("Qual a Marca do seu processador?");
+		 System.out.println("\n1.Intel\n2.AMD");
 		 marcaProcessador = entrada.next().charAt(0);
+		 System.out.println("\n==================================================================\n");
 		 
 		 while(getMarcaProcessador() != '1' && getMarcaProcessador() != '2') {
-			 System.out.println("Valor digitado invalido. \nQual o Marca do seu processador?\n1.Intel\n2.AMD");
-			 setMarcaProcessador(entrada.next().charAt(0));	
+			 System.out.println("Valor digitado invalido. \n\nQual o Marca do seu processador?");
+			 System.out.println("\n1.Intel\n2.AMD");			
+			 setMarcaProcessador(entrada.next().charAt(0));
+			 System.out.println("\n==================================================================\n");
 		 }
 		 
 		 if(getMarcaProcessador() == '1') {
@@ -37,13 +41,15 @@ public class Pergunta {
 	 
 	 void escolhaProcessadorIntel () { 	 
 			 System.out.println("Selecione o Modelo Intel do seu processador:");
-			 System.out.println("1.Core 2 duo E4500\n2.I3 4330\n3.i5-8400");
+			 System.out.println("\n1.Core 2 duo E4500\n2.I3 4330\n3.i5-8400");			
 			 setModeloProcessador(entrada.next().charAt(0));
+			 System.out.println("\n==================================================================\n");
 			 
 			 while(getModeloProcessador() != '1' && getModeloProcessador() != '2' && getModeloProcessador()!= '3') {
-				 System.out.println("Valor digitado invalido. \nQual o Modelo do seu processador?");
-				 System.out.println("1.Core 2 duo E4500\n2.I3 4330\n3.i5-8400");
+				 System.out.println("Valor digitado invalido. \n\nQual o Modelo do seu processador?");
+				 System.out.println("\n1.Core 2 duo E4500\n2.I3 4330\n3.i5-8400");				
 				 setModeloProcessador(entrada.next().charAt(0));
+				 System.out.println("\n==================================================================\n");
 			 }
 			 e = (int) Character.getNumericValue(getModeloProcessador());
 	 }
@@ -51,13 +57,15 @@ public class Pergunta {
 	void escolhaProcessadorAMD() {
 			
 			 System.out.println("Selecione o Modelo AMD do seu processador:");
-			 System.out.println("1.Athlon 64 X2 4800 plus\n2.ryzen 3 1200\n3.ryzen 3 3300x");
+			 System.out.println("\n1.Athlon 64 X2 4800 plus\n2.ryzen 3 1200\n3.ryzen 3 3300x");
 			 setModeloProcessador(entrada.next().charAt(0));	
+			 System.out.println("\n==================================================================\n");
 			 
 			 while(getModeloProcessador() != '1' && getModeloProcessador() != '2' && getModeloProcessador()!= '3') {
-				 System.out.println("Valor digitado invalido. \nQual o Modelo do seu processador?");
-				 System.out.println("1.Athlon 64 X2 4800 plus\n2.ryzen 3 1200\n3.ryzen 3 3300x");
+				 System.out.println("Valor digitado invalido. \n\nQual o Modelo do seu processador?");
+				 System.out.println("\n1.Athlon 64 X2 4800 plus\n2.ryzen 3 1200\n3.ryzen 3 3300x");
 				 setModeloProcessador(entrada.next().charAt(0));
+				 System.out.println("\n==================================================================\n");
 				 
 			 }
 			 e = (int) Character.getNumericValue(getModeloProcessador());
@@ -66,12 +74,16 @@ public class Pergunta {
 	void escolhaPlacaDeVideo() {
 		
 		
-		System.out.println("Qual a marca da sua placa de vídeo? \n1.Integrada \n2.Nvidia \n3.AMD");
+		System.out.println("Qual a marca da sua placa de vídeo? ");
+		System.out.println("\n1.Integrada \n2.Nvidia \n3.AMD");
 		setMarcaPlaca(entrada.next().charAt(0));
+		 System.out.println("\n==================================================================\n");
 		
 		 while(getMarcaPlaca() != '1' && getMarcaPlaca() != '2' && getMarcaPlaca() != '3') {
-			 System.out.println("Valor digitado invalido. \nQual a Marca da sua placa de vídeo?\n1.Integrada\n2.Nvidia\n3.AMD");
+			 System.out.println("Valor digitado invalido. \n\nQual a Marca da sua placa de vídeo?");
+			 System.out.println("\n1.Integrada\n2.Nvidia\n3.AMD");
 			 setMarcaPlaca(entrada.next().charAt(0));	
+			 System.out.println("\n==================================================================\n");
 			 
 			 
 		 }
@@ -97,13 +109,15 @@ public class Pergunta {
 	void escolhaPlacaDeVideoNvidia() {
 		
 		 System.out.println("Selecione o Modelo Nvidia da sua Placa de Vídeo:");
-		 System.out.println("1.Geforce GT 520\n2.Geforce GT 730\n3.Geforce GTX 650");
+		 System.out.println("\n1.Geforce GT 520\n2.Geforce GT 730\n3.Geforce GTX 650");
 		 setModeloPlaca(entrada.next().charAt(0));
+		 System.out.println("\n==================================================================\n");
 		 
 		 while(getModeloPlaca() != '1' && getModeloPlaca() != '2' && getModeloPlaca()!= '3') {
-			 System.out.println("Valor digitado invalido. \nQual o Modelo da sua Placa de Vídeo?");
-			 System.out.println("1.Geforce GT 520\n2.Geforce GT 730\n3.Geforce GTX 650");
+			 System.out.println("Valor digitado invalido. \n\nQual o Modelo da sua Placa de Vídeo?");
+			 System.out.println("\n1.Geforce GT 520\n2.Geforce GT 730\n3.Geforce GTX 650");
 			 setModeloPlaca(entrada.next().charAt(0));	
+			 System.out.println("\n==================================================================\n");
 		 }
 		 v = (int) Character.getNumericValue(getModeloPlaca());
 	}
@@ -111,13 +125,15 @@ public class Pergunta {
 	void escolhaPlacaDeVideoAMD() {
 		
 		 System.out.println("Selecione o Modelo AMD da sua Placa de Vídeo:");
-		 System.out.println("1.Geforce GT 520\n2.Geforce GT 730\n3.Geforce GTX 650");
+		 System.out.println("\n1.Geforce GT 520\n2.Geforce GT 730\n3.Geforce GTX 650");
 		 setModeloPlaca(entrada.next().charAt(0));
+		 System.out.println("\n==================================================================\n");
 		 
 		 while(getModeloPlaca() != '1' && getModeloPlaca() != '2' && getModeloPlaca()!= '3') {
-			 System.out.println("Valor digitado invalido. \nQual o Modelo da sua Placa de Vídeo?");
-			 System.out.println("1.Radeon HD 5570\n2.Radeon R7 240\n3.Radeon RX 550");
+			 System.out.println("Valor digitado invalido. \n\nQual o Modelo da sua Placa de Vídeo?");
+			 System.out.println("\n1.Radeon HD 5570\n2.Radeon R7 240\n3.Radeon RX 550");
 			 setModeloPlaca(entrada.next().charAt(0));	
+			 System.out.println("\n==================================================================\n");
 		 }	
 		 v = (int) Character.getNumericValue(getModeloPlaca());
 	}
@@ -125,15 +141,21 @@ public class Pergunta {
 	void escolhaMemoriaRam() {
 		
 		System.out.println("Digite a quantidade de memoria Ram do seu computador:");
-		setMemoriaRam(entrada.next());		
+		setMemoriaRam(entrada.next());	
+		 System.out.println("\n==================================================================\n");
+
+		while(getMemoriaRam().matches(regex)) {
+			System.out.println("Valor digitado invalido.");
+			System.out.println("\nDigite quanto de memoria Ram seu computador tem ?");
+			setMemoriaRam(entrada.next());	
+			 System.out.println("\n==================================================================\n");
 		
-		while(!getMemoriaRam().matches("[0-32]+")) {
-			System.out.println("Valor digitado invalido.\nDigite quanto de memoria Ram seu computador tem ?");
-			System.out.println("Digite quanto de RAM:");
-			setMemoriaRam(entrada.next());			
-		}
-		m = Integer.parseInt(getMemoriaRam());		
+		}		
+		m = Integer.parseInt(getMemoriaRam());
+
 	}
+		
+			
 
 	public char getMarcaProcessador() {
 		return marcaProcessador;

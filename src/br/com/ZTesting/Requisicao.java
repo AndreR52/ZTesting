@@ -11,12 +11,12 @@ public class Requisicao extends Pergunta {
 		
 		//Funciona
 		if(p.getE() >= 2 && p.getV() >= 2 && p.getM() >= 4) {
-			System.out.println("Hora de jogar!!!!");
-			System.out.println("Seu computador comporta o jogo Valorant!!!");
+			System.out.println("                      Hora de jogar!!!! :)                        ");
+			System.out.println("          Seu computador comporta o jogo Valorant!!!              ");
 		}
 		//Não funciona por causa do processador
 		else if(p.getE() < 2 && p.getV() >= 2 && p.getM() >= 4) {
-			System.out.println("Game Over :(");
+			System.out.println("                       Game Over :(                               ");
 			System.out.println("Sua placa de vídeo e memoria Ram são suficientes, "
 					+ "mas seu processador está abaixo do mínimo exigido pelo Valorant.");			
 		}
